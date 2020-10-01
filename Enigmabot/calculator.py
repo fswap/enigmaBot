@@ -32,7 +32,7 @@ def get_calculator_response(message: Dict[str, str], bot_handler: Any) -> str:
 		return str( temp )
 	elif words[3] == "/" :
 		if words[4] == "0":
-			return "Division by zero."
+			return "Division by 0 error."
 		temp = float(words[2]) 
 		temp1 = float(words[4])
 		temp = temp / temp1 
